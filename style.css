@@ -144,3 +144,24 @@ z-index:100;
 html{
     scroll-behavior:smooth;
 }
+#certificates a {
+    text-decoration: none;
+}
+
+#certificates button {
+    width: 280px;
+    height: 90px;
+    background: transparent;
+    border: 2px solid #00bfff;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#certificates button:hover {
+    background: #00bfff;
+    box-shadow: 0 0 20px #00bfff;
+}

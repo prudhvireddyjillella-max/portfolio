@@ -1,50 +1,86 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
-color:white;
-font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    color:white;
 }
 
+/* Navigation */
+
 nav{
-display:flex;
-justify-content:space-between;
-padding:20px 50px;
-background:#1c1c1c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#1c1c1c;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav h2{
+    color:#00bfff;
 }
 
 ul{
-display:flex;
-list-style:none;
-gap:20px;
+    display:flex;
+    list-style:none;
+    gap:20px;
 }
 
-a{
-color:white;
-text-decoration:none;
+ul a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
 }
+
+ul a:hover{
+    color:#00bfff;
+}
+
+/* Hero Section */
 
 .hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .hero h1{
-font-size:60px;
+    font-size:60px;
+    text-shadow:0 0 20px #00bfff;
 }
 
 .hero p{
-margin:20px;
-font-size:22px;
+    margin:20px;
+    font-size:22px;
 }
+
+/* Profile Photo */
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00bfff;
+    margin:20px 0;
+    box-shadow:0 0 25px #00bfff;
+}
+
+/* Buttons */
 
 button{
     padding:15px 30px;
@@ -61,64 +97,7 @@ button:hover{
     box-shadow:0 0 20px #00bfff;
 }
 
-section{
-padding:80px;
-text-align:center;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:30px;
-}
-
-.card{
-    background:#1e293b;
-    padding:30px;
-    width:220px;
-    border-radius:15px;
-    transition:0.3s;
-    border:1px solid #00bfff;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px #00bfff;
-}
-
-.profile-pic{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #00bfff;
-    margin:20px 0;
-    box-shadow: 0 0 25px #00bfff;
-}
-.socials{
-margin-top:20px;
-}
-
-.socials a{
-color:#00bfff;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
-}
-
-footer{
-padding:20px;
-text-align:center;
-background:#000;
-}
-
-nav{
-position:sticky;
-top:0;
-z-index:100;
-}
+/* Social Links */
 
 .socials{
     margin-top:20px;
@@ -137,31 +116,54 @@ z-index:100;
     color:white;
 }
 
-.hero h1{
-    font-size:60px;
-    text-shadow:0 0 20px #00bfff;
-}
-html{
-    scroll-behavior:smooth;
-}
-#certificates a {
-    text-decoration: none;
+/* Sections */
+
+section{
+    padding:80px;
+    text-align:center;
 }
 
-#certificates button {
-    width: 280px;
-    height: 90px;
-    background: transparent;
-    border: 2px solid #00bfff;
-    color: white;
-    font-size: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
+section h2{
+    margin-bottom:20px;
+    color:#00bfff;
 }
 
-#certificates button:hover {
-    background: #00bfff;
-    box-shadow: 0 0 20px #00bfff;
+/* Cards */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    width:220px;
+    border-radius:15px;
+    transition:0.3s;
+    border:1px solid #00bfff;
+    color:white;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+/* Certificate Links */
+
+#certificates a{
+    text-decoration:none;
+    color:white;
+}
+
+/* Footer */
+
+footer{
+    padding:20px;
+    text-align:center;
+    background:#000;
 }
